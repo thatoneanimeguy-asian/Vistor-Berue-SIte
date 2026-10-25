@@ -1,4 +1,4 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://visitor.com/'
 languageCode = 'en-us'
-title = 'My New Hugo Site'
+title = 'FBLA visitor bureau'
 theme = "hugo-theme-cleanwhite"
