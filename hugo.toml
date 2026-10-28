@@ -2,3 +2,8 @@ baseURL = 'https://visitor.com/'
 languageCode = 'en-us'
 title = 'FBLA visitor bureau'
 theme = "hugo-theme-cleanwhite"
+
+[params]
+header_image = "img/home-bg-jeep.jpg"
+custom_css = ["css/home-header.css"]
+custom_js = ["js/home-header.js"]

@@ -1,0 +1,1 @@
+Blacksburg, Virginia, pairs the energy of a university town with the welcoming feel of the Appalachian Mountains. Visitors can explore Virginia Tech’s beautiful campus, browse downtown shops and restaurants, and enjoy nearby trails and outdoor recreation in the New River Valley.

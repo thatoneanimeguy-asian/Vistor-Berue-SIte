@@ -1,0 +1,11 @@
+.home-header {
+    display: flex;
+    align-items: center;
+    height: clamp(360px, 62vh, 560px);
+    min-height: 0;
+    overflow: hidden;
+}
+
+.home-header .site-heading {
+    padding: 0;
+}

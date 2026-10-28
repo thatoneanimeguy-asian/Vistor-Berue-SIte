@@ -1,0 +1,25 @@
+{{ define "header" }}
+<header class="intro-header home-header" style="background-image: url('{{ .Site.Params.header_image | relURL }}')">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <div class="site-heading">
+                    <h1>{{ .Site.Title }}</h1>
+                    <span class="subheading">{{ .Site.Params.slogan }}</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+{{ end }}
+
+{{ define "main" }}
+<div class="container">
+    <div class="row">
+        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ partial "portfolio.html" . }}
+{{ end }}
