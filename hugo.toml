@@ -7,3 +7,11 @@ theme = "hugo-theme-cleanwhite"
 header_image = "img/home-bg-jeep.jpg"
 custom_css = ["css/home-header.css"]
 custom_js = ["js/home-header.js"]
+additional_menus = [
+  { title = "About", href = "/about" },
+  { title = "Things to Do", href = "/things-to-do" },
+  { title = "Food & Dining", href = "/dining" },
+  { title = "Where to Stay", href = "/stay" },
+  { title = "Events", href = "/events" },
+  { title = "Plan Your Visit", href = "/plan-your-visit" },
+]

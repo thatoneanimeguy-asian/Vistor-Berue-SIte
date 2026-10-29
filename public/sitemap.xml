@@ -4,8 +4,20 @@
   <url>
     <loc>http://localhost:1313/</loc>
   </url><url>
+    <loc>http://localhost:1313/about/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
+    <loc>http://localhost:1313/events/</loc>
+  </url><url>
+    <loc>http://localhost:1313/dining/</loc>
+  </url><url>
+    <loc>http://localhost:1313/plan-your-visit/</loc>
+  </url><url>
     <loc>http://localhost:1313/tags/</loc>
+  </url><url>
+    <loc>http://localhost:1313/things-to-do/</loc>
+  </url><url>
+    <loc>http://localhost:1313/stay/</loc>
   </url>
 </urlset>
