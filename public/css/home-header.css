@@ -9,3 +9,20 @@
 .home-header .site-heading {
     padding: 0;
 }
+
+.navbar-custom.is-fixed {
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-bottom: 1px solid var(--color-border-light);
+    transform: translate3d(0, 0, 0);
+}
+
+.navbar-custom.is-fixed .navbar-brand,
+.navbar-custom.is-fixed .nav li a {
+    color: var(--navbar-text);
+}
+
+.navbar-custom.is-fixed .navbar-toggle .icon-bar {
+    background-color: var(--navbar-text);
+}
