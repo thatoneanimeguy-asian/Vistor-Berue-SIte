@@ -6,7 +6,7 @@ theme = "hugo-theme-cleanwhite"
 [params]
 header_image = "img/home-bg-jeep.jpg"
 custom_css = ["css/home-header.css"]
-custom_js = ["js/home-header.js"]
+custom_js = ["js/home-header.js", "js/accessibility-settings.js"]
 additional_menus = [
   { title = "About", href = "/about" },
   { title = "Things to Do", href = "/things-to-do" },

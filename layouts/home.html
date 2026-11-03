@@ -14,12 +14,14 @@
 {{ end }}
 
 {{ define "main" }}
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
-            {{ .Content }}
+<main id="main-content" class="site-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
+                {{ .Content }}
+            </div>
         </div>
     </div>
-</div>
-{{ partial "portfolio.html" . }}
+    {{ partial "portfolio.html" . }}
+</main>
 {{ end }}

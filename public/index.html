@@ -94,20 +94,23 @@
     
     <script src="http://localhost:1313/js/home-header.js"></script>
     
+    <script src="http://localhost:1313/js/accessibility-settings.js"></script>
+    
 
 	<meta name="generator" content="Hugo 0.169.0">
 </head>
 
 
 
+<body>
 
 
-<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top" aria-label="Main navigation">
 
     <div class="container-fluid">
         
         <div class="navbar-header page-scroll">
-            <button type="button" class="navbar-toggle">
+            <button type="button" class="navbar-toggle" aria-expanded="false" aria-controls="huxblog_navbar" aria-label="Toggle navigation menu">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -120,7 +123,7 @@
         
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right" aria-label="Site menu">
                     <li>
                         <a href="/">All Posts</a>
                     </li>
@@ -129,26 +132,26 @@
                     
 
 		    
-                        <li><a href="/about/">About</a></li>
+                        <li><a href="/about/" >About</a></li>
                     
-                        <li><a href="/things-to-do/">Things to Do</a></li>
+                        <li><a href="/things-to-do/" >Things to Do</a></li>
                     
-                        <li><a href="/dining/">Food &amp; Dining</a></li>
+                        <li><a href="/dining/" >Food &amp; Dining</a></li>
                     
-                        <li><a href="/stay/">Where to Stay</a></li>
+                        <li><a href="/stay/" >Where to Stay</a></li>
                     
-                        <li><a href="/events/">Events</a></li>
+                        <li><a href="/events/" >Events</a></li>
                     
-                        <li><a href="/plan-your-visit/">Plan Your Visit</a></li>
+                        <li><a href="/plan-your-visit/" >Plan Your Visit</a></li>
                     
 		            <li>
-                        <a href="/search"><i class="fa fa-search"></i></a>
+                        <a href="/search" aria-label="Search this site"><i class="fa fa-search" aria-hidden="true"></i></a>
 		           </li>
                     
 		            <li>
-                        <a href="#" id="theme-toggle" title="Toggle dark mode" style="opacity: 0;">
-                            <i class="fa fa-moon"></i>
-                            <i class="fa fa-sun" style="display: none;"></i>
+                        <a href="#" id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" aria-pressed="false" style="opacity: 0;">
+                            <i class="fa fa-moon" aria-hidden="true"></i>
+                            <i class="fa fa-sun" aria-hidden="true" style="display: none;"></i>
                         </a>
 		           </li>
                     <script>
@@ -165,10 +168,14 @@
                                 if (moonIcon) moonIcon.style.display = 'none';
                                 if (sunIcon) sunIcon.style.display = 'inline';
                                 toggleBtn.setAttribute('title', 'Switch to light mode');
+                                toggleBtn.setAttribute('aria-label', 'Switch to light mode');
+                                toggleBtn.setAttribute('aria-pressed', 'true');
                             } else {
                                 if (moonIcon) moonIcon.style.display = 'inline';
                                 if (sunIcon) sunIcon.style.display = 'none';
                                 toggleBtn.setAttribute('title', 'Switch to dark mode');
+                                toggleBtn.setAttribute('aria-label', 'Switch to dark mode');
+                                toggleBtn.setAttribute('aria-pressed', 'false');
                             }
 
                             
@@ -180,7 +187,25 @@
                     })();
                     </script>
                     
+                    <li>
+                        <button class="accessibility-settings-toggle" id="accessibility-settings-toggle" type="button" aria-expanded="false" aria-controls="accessibility-settings">
+                            <i class="fa fa-universal-access" aria-hidden="true"></i>
+                            <span>Accessibility</span>
+                        </button>
+                    </li>
                 </ul>
+                <section class="accessibility-settings" id="accessibility-settings" aria-labelledby="accessibility-settings-title" hidden>
+                    <h2 id="accessibility-settings-title">Display settings</h2>
+                    <fieldset>
+                        <legend>Text size</legend>
+                        <button type="button" id="text-size-decrease" aria-label="Decrease text size">−</button>
+                        <span id="text-size-value" aria-live="polite">100%</span>
+                        <button type="button" id="text-size-increase" aria-label="Increase text size">+</button>
+                    </fieldset>
+                    <button type="button" id="high-contrast-toggle" aria-pressed="false">High contrast</button>
+                    <button type="button" id="underline-links-toggle" aria-pressed="false">Underline links</button>
+                    <button type="button" id="accessibility-settings-reset">Reset settings</button>
+                </section>
             </div>
         </div>
         
@@ -196,11 +221,17 @@
     var $navbar = document.querySelector('#huxblog_navbar');
     var $collapse = document.querySelector('.navbar-collapse');
 
-    $toggle.addEventListener('click', handleMagic)
+    if ($toggle) {
+        $toggle.addEventListener('click', handleMagic);
+    }
+
     function handleMagic(e){
         if ($navbar.className.indexOf('in') > 0) {
         
             $navbar.className = " ";
+            if ($toggle) {
+                $toggle.setAttribute('aria-expanded', 'false');
+            }
             
             setTimeout(function(){
                 
@@ -212,6 +243,9 @@
         
             $collapse.style.height = "auto"
             $navbar.className += " in";
+            if ($toggle) {
+                $toggle.setAttribute('aria-expanded', 'true');
+            }
         }
     }
 
@@ -223,6 +257,9 @@
                 if ($navbar.className.indexOf('in') > 0) {
                     
                     $navbar.className = " ";
+                    if ($toggle) {
+                        $toggle.setAttribute('aria-expanded', 'false');
+                    }
                     setTimeout(function(){
                         if($navbar.className.indexOf('in') < 0) {
                             $collapse.style.height = "0px"
@@ -251,15 +288,16 @@
 
 
 
-<div class="container">
-    <div class="row">
-        <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
-            <p>Blacksburg, Virginia, pairs the energy of a university town with the welcoming feel of the Appalachian Mountains. Visitors can explore Virginia Tech’s beautiful campus, browse downtown shops and restaurants, and enjoy nearby trails and outdoor recreation in the New River Valley.</p>
+<main id="main-content" class="site-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-1 col-md-8 col-md-offset-1 col-sm-12 col-xs-12 post-container">
+                <p>Blacksburg, Virginia, pairs the energy of a university town with the welcoming feel of the Appalachian Mountains. Visitors can explore Virginia Tech’s beautiful campus, browse downtown shops and restaurants, and enjoy nearby trails and outdoor recreation in the New River Valley.</p>
 
+            </div>
         </div>
     </div>
-</div>
-
+    
 <div data-pagefind-ignore="all" class="container">
     <div class="row">
         
@@ -307,6 +345,7 @@
 </div>
 
 
+</main>
 
 
 
