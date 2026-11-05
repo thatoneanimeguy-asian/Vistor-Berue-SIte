@@ -2,22 +2,22 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
-    <loc>http://localhost:1313/</loc>
+    <loc>http://localhost:1314/</loc>
   </url><url>
-    <loc>http://localhost:1313/about/</loc>
+    <loc>http://localhost:1314/about/</loc>
   </url><url>
-    <loc>http://localhost:1313/categories/</loc>
+    <loc>http://localhost:1314/categories/</loc>
   </url><url>
-    <loc>http://localhost:1313/events/</loc>
+    <loc>http://localhost:1314/events/</loc>
   </url><url>
-    <loc>http://localhost:1313/dining/</loc>
+    <loc>http://localhost:1314/dining/</loc>
   </url><url>
-    <loc>http://localhost:1313/plan-your-visit/</loc>
+    <loc>http://localhost:1314/plan-your-visit/</loc>
   </url><url>
-    <loc>http://localhost:1313/tags/</loc>
+    <loc>http://localhost:1314/tags/</loc>
   </url><url>
-    <loc>http://localhost:1313/things-to-do/</loc>
+    <loc>http://localhost:1314/things-to-do/</loc>
   </url><url>
-    <loc>http://localhost:1313/stay/</loc>
+    <loc>http://localhost:1314/stay/</loc>
   </url>
 </urlset>

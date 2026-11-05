@@ -1,11 +1,11 @@
 baseURL = 'https://visitor.com/'
 languageCode = 'en-us'
-title = 'Blacksburg Visitor Bureau'
+title = 'Blacksburg'
 theme = "hugo-theme-cleanwhite"
 
 [params]
 header_image = "img/blue-ridge-hero.svg"
-slogan = "Find your foothold in the New River Valley."
+slogan = "Virginia Tech, downtown, and the New River Valley."
 description = "Discover Virginia Tech, downtown Blacksburg, local dining, events, and the outdoor beauty of the New River Valley."
 SEOTitle = "Blacksburg, Virginia"
 custom_css = ["css/home-header.css", "css/visitor-planning.css"]

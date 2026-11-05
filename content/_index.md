@@ -1,7 +1,7 @@
-Blacksburg is a place to slow down, look around, and make the day your own. Follow a trail through the New River Valley, wander Virginia Tech's distinctive campus, or find a new favorite around downtown's independent shops and restaurants.
+Virginia Tech and downtown are a good place to start. Walk the campus, find a meal on Main Street, or spend the afternoon on the Huckleberry Trail—and leave the rest of the day open.
 
-{{< visitor-note eyebrow="A mountain town, your kind of pace" title="Big views. Small-town welcome." >}}
-Come for a game, a campus visit, a weekend outdoors, or simply a change of scenery. However you get here, leave a little room for the unexpected.
+{{< visitor-note eyebrow="Start with what brings you here" title="Campus, downtown, or the trail." >}}
+Blacksburg makes an easy base for a Virginia Tech visit, a Hokies game, or a weekend in the New River Valley. Pick a starting point and take it from there.
 {{< /visitor-note >}}
 
 ## Find your kind of Blacksburg
