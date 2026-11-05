@@ -22,12 +22,12 @@
     </script>
 
     
-    <meta property="og:site_name" content="FBLA visitor bureau">
+    <meta property="og:site_name" content="Blacksburg Visitor Bureau">
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="http://localhost:1313//img/home-bg-jeep.jpg">
-    <meta property="twitter:image" content="http://localhost:1313//img/home-bg-jeep.jpg" />
+    <meta property="og:image" content="http://localhost:1313//img/blue-ridge-hero.svg">
+    <meta property="twitter:image" content="http://localhost:1313//img/blue-ridge-hero.svg" />
     
 
     
@@ -37,9 +37,9 @@
     
 
     
-    <meta name="description" content="">
-    <meta property="og:description" content="" />
-    <meta property="twitter:description" content="" />
+    <meta name="description" content="Build a flexible Blacksburg, Virginia visit with itinerary ideas, map links, Virginia Tech visitor information, and helpful planning tips.">
+    <meta property="og:description" content="Build a flexible Blacksburg, Virginia visit with itinerary ideas, map links, Virginia Tech visitor information, and helpful planning tips." />
+    <meta property="twitter:description" content="Build a flexible Blacksburg, Virginia visit with itinerary ideas, map links, Virginia Tech visitor information, and helpful planning tips." />
     
 
     <meta property="og:url" content="http://localhost:1313/plan-your-visit/" />
@@ -52,7 +52,7 @@
     <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>Plan Your Visit | </title>
+    <title>Plan Your Visit | Blacksburg, Virginia</title>
 
     <link rel="canonical" href="/plan-your-visit/">
 
@@ -76,7 +76,7 @@
     
     
     
-    <link rel="stylesheet" href="http://localhost:1313/css/home-header.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/home-header.css"><link rel="stylesheet" href="http://localhost:1313/css/visitor-planning.css">
 
     
     <script src="/js/jquery.min.js"></script>
@@ -103,11 +103,9 @@
 
 <body>
 
-
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top" aria-label="Main navigation">
 
     <div class="container-fluid">
-        
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" aria-expanded="false" aria-controls="huxblog_navbar" aria-label="Toggle navigation menu">
                 <span class="sr-only">Toggle navigation</span>
@@ -115,155 +113,125 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">FBLA visitor bureau</a>
+            <a class="navbar-brand" href="/">Blacksburg Visitor Bureau</a>
         </div>
-
-        
-        
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right" aria-label="Site menu">
+                    <li><a href="/">All Posts</a></li>
+                    
+                        
+                    
+                    
                     <li>
-                        <a href="/">All Posts</a>
+                        <a href="/about/" >About</a>
                     </li>
                     
-                        
-                    
-
-		    
-                        <li><a href="/about/" >About</a></li>
-                    
-                        <li><a href="/things-to-do/" >Things to Do</a></li>
-                    
-                        <li><a href="/dining/" >Food &amp; Dining</a></li>
-                    
-                        <li><a href="/stay/" >Where to Stay</a></li>
-                    
-                        <li><a href="/events/" >Events</a></li>
-                    
-                        <li><a href="/plan-your-visit/" >Plan Your Visit</a></li>
-                    
-		            <li>
-                        <a href="/search" aria-label="Search this site"><i class="fa fa-search" aria-hidden="true"></i></a>
-		           </li>
-                    
-		            <li>
-                        <a href="#" id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" aria-pressed="false" style="opacity: 0;">
-                            <i class="fa fa-moon" aria-hidden="true"></i>
-                            <i class="fa fa-sun" aria-hidden="true" style="display: none;"></i>
-                        </a>
-		           </li>
-                    <script>
-                    (function() {
-                        
-                        var theme = localStorage.getItem('cleanwhite-theme') ||
-                                      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-                        var toggleBtn = document.getElementById('theme-toggle');
-                        if (toggleBtn) {
-                            var moonIcon = toggleBtn.querySelector('.fa-moon');
-                            var sunIcon = toggleBtn.querySelector('.fa-sun');
-
-                            if (theme === 'dark') {
-                                if (moonIcon) moonIcon.style.display = 'none';
-                                if (sunIcon) sunIcon.style.display = 'inline';
-                                toggleBtn.setAttribute('title', 'Switch to light mode');
-                                toggleBtn.setAttribute('aria-label', 'Switch to light mode');
-                                toggleBtn.setAttribute('aria-pressed', 'true');
-                            } else {
-                                if (moonIcon) moonIcon.style.display = 'inline';
-                                if (sunIcon) sunIcon.style.display = 'none';
-                                toggleBtn.setAttribute('title', 'Switch to dark mode');
-                                toggleBtn.setAttribute('aria-label', 'Switch to dark mode');
-                                toggleBtn.setAttribute('aria-pressed', 'false');
-                            }
-
-                            
-                            requestAnimationFrame(function() {
-                                toggleBtn.style.transition = 'opacity 0.2s ease';
-                                toggleBtn.style.opacity = '1';
-                            });
-                        }
-                    })();
-                    </script>
+                    <li>
+                        <a href="/things-to-do/" >Things to Do</a>
+                    </li>
                     
                     <li>
-                        <button class="accessibility-settings-toggle" id="accessibility-settings-toggle" type="button" aria-expanded="false" aria-controls="accessibility-settings">
-                            <i class="fa fa-universal-access" aria-hidden="true"></i>
-                            <span>Accessibility</span>
+                        <a href="/dining/" >Food &amp; Dining</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/stay/" >Where to Stay</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/events/" >Events</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/plan-your-visit/" >Plan Your Visit</a>
+                    </li>
+                    
+                    <li><a href="/search" aria-label="Search this site"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                    <li>
+                        <button class="site-settings-toggle" id="site-settings-toggle" type="button" aria-expanded="false" aria-controls="site-settings">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <span>Settings</span>
                         </button>
                     </li>
                 </ul>
-                <section class="accessibility-settings" id="accessibility-settings" aria-labelledby="accessibility-settings-title" hidden>
-                    <h2 id="accessibility-settings-title">Display settings</h2>
-                    <fieldset>
-                        <legend>Text size</legend>
-                        <button type="button" id="text-size-decrease" aria-label="Decrease text size">−</button>
-                        <span id="text-size-value" aria-live="polite">100%</span>
-                        <button type="button" id="text-size-increase" aria-label="Increase text size">+</button>
+                <section class="site-settings" id="site-settings" aria-labelledby="site-settings-title" hidden>
+                    <h2 id="site-settings-title">Site settings</h2>
+                    <fieldset class="site-settings__group">
+                        <legend>Color theme</legend>
+                        <button type="button" id="theme-toggle" aria-label="Switch between light and dark theme" aria-pressed="false">
+                            <i class="fa fa-moon" aria-hidden="true"></i>
+                            <i class="fa fa-sun" aria-hidden="true" style="display: none;"></i>
+                            <span>Switch light / dark</span>
+                        </button>
                     </fieldset>
-                    <button type="button" id="high-contrast-toggle" aria-pressed="false">High contrast</button>
-                    <button type="button" id="underline-links-toggle" aria-pressed="false">Underline links</button>
-                    <button type="button" id="accessibility-settings-reset">Reset settings</button>
+                    <fieldset class="site-settings__group">
+                        <legend>Device layout</legend>
+                        <div class="site-settings__choices" role="group" aria-label="Choose a device layout">
+                            <button type="button" id="device-mode-phone" aria-pressed="false">
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                <span>Phone</span>
+                            </button>
+                            <button type="button" id="device-mode-laptop" aria-pressed="true">
+                                <i class="fa fa-laptop" aria-hidden="true"></i>
+                                <span>Laptop</span>
+                            </button>
+                        </div>
+                    </fieldset>
+                    <fieldset class="site-settings__group">
+                        <legend>Reading options</legend>
+                        <div class="site-settings__text-size">
+                            <span>Text size</span>
+                            <button type="button" id="text-size-decrease" aria-label="Decrease text size">−</button>
+                            <span id="text-size-value" aria-live="polite">100%</span>
+                            <button type="button" id="text-size-increase" aria-label="Increase text size">+</button>
+                        </div>
+                        <button type="button" id="high-contrast-toggle" aria-pressed="false">High contrast</button>
+                        <button type="button" id="underline-links-toggle" aria-pressed="false">Underline links</button>
+                    </fieldset>
+                    <button type="button" id="site-settings-reset">Reset settings</button>
                 </section>
             </div>
         </div>
-        
     </div>
-    
 </nav>
 <script>
-    
-    
-    
-    var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
     var $navbar = document.querySelector('#huxblog_navbar');
     var $collapse = document.querySelector('.navbar-collapse');
 
     if ($toggle) {
-        $toggle.addEventListener('click', handleMagic);
-    }
-
-    function handleMagic(e){
-        if ($navbar.className.indexOf('in') > 0) {
-        
-            $navbar.className = " ";
-            if ($toggle) {
+        $toggle.addEventListener('click', function () {
+            var isOpen = $navbar.className.indexOf('in') > 0;
+            if (isOpen) {
+                $navbar.className = ' ';
                 $toggle.setAttribute('aria-expanded', 'false');
-            }
-            
-            setTimeout(function(){
-                
-                if($navbar.className.indexOf('in') < 0) {
-                    $collapse.style.height = "0px"
-                }
-            },400)
-        }else{
-        
-            $collapse.style.height = "auto"
-            $navbar.className += " in";
-            if ($toggle) {
+                setTimeout(function () {
+                    if ($navbar.className.indexOf('in') < 0) {
+                        $collapse.style.height = '0px';
+                    }
+                }, 400);
+            } else {
+                $collapse.style.height = 'auto';
+                $navbar.className += ' in';
                 $toggle.setAttribute('aria-expanded', 'true');
             }
-        }
+        });
     }
 
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        var navLinks = document.querySelectorAll('.navbar-collapse a');
-        navLinks.forEach(function(link) {
-            link.addEventListener('click', function() {
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.navbar-collapse a').forEach(function (link) {
+            link.addEventListener('click', function () {
                 if ($navbar.className.indexOf('in') > 0) {
-                    
-                    $navbar.className = " ";
+                    $navbar.className = ' ';
                     if ($toggle) {
                         $toggle.setAttribute('aria-expanded', 'false');
                     }
-                    setTimeout(function(){
-                        if($navbar.className.indexOf('in') < 0) {
-                            $collapse.style.height = "0px"
+                    setTimeout(function () {
+                        if ($navbar.className.indexOf('in') < 0) {
+                            $collapse.style.height = '0px';
                         }
-                    },400)
+                    }, 400);
                 }
             });
         });
@@ -272,7 +240,7 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+<header class="intro-header" style="background-image: url('/img/blue-ridge-hero.svg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
@@ -286,18 +254,88 @@
 
 
 
-<main id="main-content" class="site-main">
-    <article>
-        <div class="container">
+<main id="main-content" class="site-main page-main">
+    <article class="page-article">
+        <div class="container page-content">
             <div class="row">
-                <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container">
+                <div class="col-xs-12 post-container page-content__body content-panel">
                 
-                    <p>Content coming soon.</p>
+                    <p>Make the most of your time in Blacksburg. Combine Virginia Tech, downtown, local food, and the New River Valley&rsquo;s outdoor spaces at a pace that feels right for you.</p>
+<h2 id="get-oriented">Get oriented</h2>
+<p>Search for an address, business, or attraction and open the results in Google Maps. Start with a few visitor favorites:</p>
+<form class="map-search-form" action="https://www.google.com/maps/search/" method="get" target="_blank" rel="noopener">
+    <input type="hidden" name="api" value="1">
+    <label for="blacksburg-map-query">Search for a place in Blacksburg</label>
+    <div class="map-search-form__controls">
+        <input id="blacksburg-map-query" name="query" type="search" value="Blacksburg, Virginia" required>
+        <button type="submit">Search maps</button>
+    </div>
+</form>
+
+<div class="feature-grid">
+    
+<a class="feature-card" href="https://www.google.com/maps/search/?api=1&amp;query=Downtown&#43;Blacksburg&#43;Virginia">
+    <span class="feature-card__eyebrow">Start downtown</span>
+    <span class="feature-card__title">Shops, cafés &amp; local flavor</span>
+    <span class="feature-card__text">Get your bearings around downtown Blacksburg and make a meal part of the stroll.</span>
+    <span class="feature-card__action">Explore <span aria-hidden="true">→</span></span>
+</a>
+
+<a class="feature-card" href="https://www.vt.edu/visit.html">
+    <span class="feature-card__eyebrow">Hokie country</span>
+    <span class="feature-card__title">Virginia Tech campus</span>
+    <span class="feature-card__text">Plan a campus visit and check visitor parking information before you arrive.</span>
+    <span class="feature-card__action">Explore <span aria-hidden="true">→</span></span>
+</a>
+
+<a class="feature-card" href="https://www.huckleberrytrail.org/">
+    <span class="feature-card__eyebrow">Find your fresh air</span>
+    <span class="feature-card__title">Huckleberry Trail</span>
+    <span class="feature-card__text">Look up trail access and maps for this paved connection between Blacksburg and Christiansburg.</span>
+    <span class="feature-card__action">Explore <span aria-hidden="true">→</span></span>
+</a>
+
+
+</div>
+
+<h2 id="itinerary-ideas">Itinerary ideas</h2>
+<h3 id="a-day-in-blacksburg">A day in Blacksburg</h3>
+<ol>
+<li><strong>Start downtown.</strong> Grab breakfast or coffee and explore the area around Main Street.</li>
+<li><strong>Make time for campus.</strong> Walk through Virginia Tech and check its visitor guide for tours, highlights, and parking.</li>
+<li><strong>Take a lunch break.</strong> Choose a place downtown or near your next stop.</li>
+<li><strong>Get outside.</strong> Walk or bike a section of the Huckleberry Trail, checking current access and conditions first.</li>
+<li><strong>Leave the evening open.</strong> Find dinner, a performance, or a game if one is on the calendar.</li>
+</ol>
+<h3 id="a-weekend-in-the-new-river-valley">A weekend in the New River Valley</h3>
+<p><strong>Day one:</strong> Get oriented downtown, explore Virginia Tech, and settle in for a local dinner. If an event is on the calendar, give yourself time for it.</p>
+<p><strong>Day two:</strong> Spend the morning on a trail or exploring the region. Return to Blacksburg for lunch and one last stop before heading home.</p>
+<p>These are flexible ideas, not timed schedules. Check travel times, opening hours, trail conditions, and parking before you set out.</p>
+<aside class="visitor-note">
+    <span class="visitor-note__eyebrow">Hokie weekend?</span>
+    <h2>Book and plan ahead</h2>
+    <div>Games, commencement, and other Virginia Tech events can increase demand around town. Check the <a href="https://events.vt.edu/">university events calendar</a> before choosing dates, reserve lodging early, and confirm parking and arrival details with the venue.</div>
+</aside>
+
+<h2 id="before-you-go">Before you go</h2>
+<ul>
+<li>Check <a href="/events/">upcoming events</a> and confirm dates, tickets, and venue information with the organizer.</li>
+<li>Browse <a href="/dining/">places to eat</a> and <a href="/stay/">places to stay</a>; contact businesses for current hours, menus, availability, and policies.</li>
+<li>Save map links and confirm the exact address before traveling.</li>
+<li>For outdoor plans, review the weather, trail conditions, and posted access guidance.</li>
+<li>If you have accessibility or other specific needs, contact the destination in advance to confirm available accommodations.</li>
+</ul>
+<h2 id="frequently-asked-questions">Frequently asked questions</h2>
+<h3 id="what-should-i-see-if-i-only-have-a-few-hours">What should I see if I only have a few hours?</h3>
+<p>Choose either downtown Blacksburg or Virginia Tech&rsquo;s campus, depending on your interests. Both can pair well with a meal; check campus visitor information before you go.</p>
+<h3 id="do-i-need-to-plan-around-virginia-tech-events">Do I need to plan around Virginia Tech events?</h3>
+<p>It can help. Campus events may affect lodging demand, traffic, parking, and availability. Check the university&rsquo;s current calendar and confirm travel details before you arrive.</p>
+<h3 id="can-i-get-around-without-a-car">Can I get around without a car?</h3>
+<p>It depends on your itinerary and where you are staying. Check current local transit options, walking routes, and service schedules before relying on them.</p>
+<h3 id="are-trails-open-year-round">Are trails open year-round?</h3>
+<p>Conditions and access can change with weather or maintenance. Check current trail information before heading out and choose footwear and clothing for the conditions.</p>
+<h3 id="where-can-i-find-current-hours-and-prices">Where can I find current hours and prices?</h3>
+<p>Hours, prices, and reservation policies can change. Confirm details directly with each restaurant, lodging provider, attraction, or event organizer.</p>
 
                 
 
@@ -307,29 +345,6 @@
 
 
                 </div>
-
-                
-
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-	
-    
-    
-    
-    
-
-    
-    
-    
-    
-</div>
-
             </div>
         </div>
     </article>
@@ -366,7 +381,7 @@
            
              </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; FBLA visitor bureau 2026
+                    Copyright &copy; Blacksburg Visitor Bureau 2026
                     
                 </p>
             </div>

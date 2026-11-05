@@ -1,0 +1,5 @@
+<aside class="visitor-note">
+    <span class="visitor-note__eyebrow">{{ .Get "eyebrow" }}</span>
+    <h2>{{ .Get "title" }}</h2>
+    <div>{{ .Inner | markdownify }}</div>
+</aside>

@@ -13,16 +13,11 @@
 {{ end }}
 
 {{ define "main" }}
-<main id="main-content" class="site-main">
-    <article>
-        <div class="container">
+<main id="main-content" class="site-main page-main">
+    <article class="page-article">
+        <div class="container page-content">
             <div class="row">
-                <div class="
-                col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container">
+                <div class="col-xs-12 post-container page-content__body content-panel">
                 {{ if eq (.Param "multilingual") true }}
                     {{ partial "multilingual-sel.html" . }}
 
@@ -40,8 +35,6 @@
 
                 {{ partial "comments.html" . }}
                 </div>
-
-                {{ partial "sidebar.html" . }}
             </div>
         </div>
     </article>

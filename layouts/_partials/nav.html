@@ -1,0 +1,119 @@
+{{ if or (eq .Params.navstyle "invert") (eq .Params.headerstyle "text") }}
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top invert" aria-label="Main navigation">
+{{ else }}
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top" aria-label="Main navigation">
+{{ end }}
+    <div class="container-fluid">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" aria-expanded="false" aria-controls="huxblog_navbar" aria-label="Toggle navigation menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="{{ "/" | relLangURL }}">{{ .Site.Title }}</a>
+        </div>
+        <div id="huxblog_navbar">
+            <div class="navbar-collapse">
+                <ul class="nav navbar-nav navbar-right" aria-label="Site menu">
+                    <li><a href="{{ "/" | relLangURL }}">All Posts</a></li>
+                    {{ if not .Site.Params.omit_categories }}
+                        {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                        <li><a href="{{ "categories/" | relLangURL }}{{ $name | urlize }}/">{{ $name }}</a></li>
+                        {{ end }}
+                    {{ end }}
+                    {{ range .Site.Params.additional_menus }}
+                    <li>
+                        <a href="{{ .href | relLangURL }}/" {{ if eq $.RelPermalink (.href | relURL) }}aria-current="page"{{ end }}>{{ .title }}</a>
+                    </li>
+                    {{ end }}
+                    <li><a href="{{ "search" | relURL }}" aria-label="Search this site"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                    <li>
+                        <button class="site-settings-toggle" id="site-settings-toggle" type="button" aria-expanded="false" aria-controls="site-settings">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <span>Settings</span>
+                        </button>
+                    </li>
+                </ul>
+                <section class="site-settings" id="site-settings" aria-labelledby="site-settings-title" hidden>
+                    <h2 id="site-settings-title">Site settings</h2>
+                    <fieldset class="site-settings__group">
+                        <legend>Color theme</legend>
+                        <button type="button" id="theme-toggle" aria-label="Switch between light and dark theme" aria-pressed="false">
+                            <i class="fa fa-moon" aria-hidden="true"></i>
+                            <i class="fa fa-sun" aria-hidden="true" style="display: none;"></i>
+                            <span>Switch light / dark</span>
+                        </button>
+                    </fieldset>
+                    <fieldset class="site-settings__group">
+                        <legend>Device layout</legend>
+                        <div class="site-settings__choices" role="group" aria-label="Choose a device layout">
+                            <button type="button" id="device-mode-phone" aria-pressed="false">
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                <span>Phone</span>
+                            </button>
+                            <button type="button" id="device-mode-laptop" aria-pressed="true">
+                                <i class="fa fa-laptop" aria-hidden="true"></i>
+                                <span>Laptop</span>
+                            </button>
+                        </div>
+                    </fieldset>
+                    <fieldset class="site-settings__group">
+                        <legend>Reading options</legend>
+                        <div class="site-settings__text-size">
+                            <span>Text size</span>
+                            <button type="button" id="text-size-decrease" aria-label="Decrease text size">−</button>
+                            <span id="text-size-value" aria-live="polite">100%</span>
+                            <button type="button" id="text-size-increase" aria-label="Increase text size">+</button>
+                        </div>
+                        <button type="button" id="high-contrast-toggle" aria-pressed="false">High contrast</button>
+                        <button type="button" id="underline-links-toggle" aria-pressed="false">Underline links</button>
+                    </fieldset>
+                    <button type="button" id="site-settings-reset">Reset settings</button>
+                </section>
+            </div>
+        </div>
+    </div>
+</nav>
+<script>
+    var $toggle = document.querySelector('.navbar-toggle');
+    var $navbar = document.querySelector('#huxblog_navbar');
+    var $collapse = document.querySelector('.navbar-collapse');
+
+    if ($toggle) {
+        $toggle.addEventListener('click', function () {
+            var isOpen = $navbar.className.indexOf('in') > 0;
+            if (isOpen) {
+                $navbar.className = ' ';
+                $toggle.setAttribute('aria-expanded', 'false');
+                setTimeout(function () {
+                    if ($navbar.className.indexOf('in') < 0) {
+                        $collapse.style.height = '0px';
+                    }
+                }, 400);
+            } else {
+                $collapse.style.height = 'auto';
+                $navbar.className += ' in';
+                $toggle.setAttribute('aria-expanded', 'true');
+            }
+        });
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.navbar-collapse a').forEach(function (link) {
+            link.addEventListener('click', function () {
+                if ($navbar.className.indexOf('in') > 0) {
+                    $navbar.className = ' ';
+                    if ($toggle) {
+                        $toggle.setAttribute('aria-expanded', 'false');
+                    }
+                    setTimeout(function () {
+                        if ($navbar.className.indexOf('in') < 0) {
+                            $collapse.style.height = '0px';
+                        }
+                    }, 400);
+                }
+            });
+        });
+    });
+</script>

@@ -22,12 +22,12 @@
     </script>
 
     
-    <meta property="og:site_name" content="FBLA visitor bureau">
+    <meta property="og:site_name" content="Blacksburg Visitor Bureau">
     <meta property="og:type" content="article">
 
     
-    <meta property="og:image" content="http://localhost:1313//img/home-bg-jeep.jpg">
-    <meta property="twitter:image" content="http://localhost:1313//img/home-bg-jeep.jpg" />
+    <meta property="og:image" content="http://localhost:1313//img/blue-ridge-hero.svg">
+    <meta property="twitter:image" content="http://localhost:1313//img/blue-ridge-hero.svg" />
     
 
     
@@ -37,9 +37,9 @@
     
 
     
-    <meta name="description" content="">
-    <meta property="og:description" content="" />
-    <meta property="twitter:description" content="" />
+    <meta name="description" content="Discover Virginia Tech, downtown Blacksburg, local dining, events, and the outdoor beauty of the New River Valley.">
+    <meta property="og:description" content="Discover Virginia Tech, downtown Blacksburg, local dining, events, and the outdoor beauty of the New River Valley." />
+    <meta property="twitter:description" content="Discover Virginia Tech, downtown Blacksburg, local dining, events, and the outdoor beauty of the New River Valley." />
     
 
     <meta property="og:url" content="http://localhost:1313/404.html" />
@@ -52,7 +52,7 @@
     <meta name="keyword"  content="">
     <link rel="shortcut icon" href="/img/favicon.ico">
 
-    <title>404 Page not found | </title>
+    <title>404 Page not found | Blacksburg, Virginia</title>
 
     <link rel="canonical" href="/404.html">
 
@@ -76,7 +76,7 @@
     
     
     
-    <link rel="stylesheet" href="http://localhost:1313/css/home-header.css">
+    <link rel="stylesheet" href="http://localhost:1313/css/home-header.css"><link rel="stylesheet" href="http://localhost:1313/css/visitor-planning.css">
 
     
     <script src="/js/jquery.min.js"></script>
@@ -103,11 +103,9 @@
 
 <body>
 
-
 <nav class="navbar navbar-default navbar-custom navbar-fixed-top" aria-label="Main navigation">
 
     <div class="container-fluid">
-        
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" aria-expanded="false" aria-controls="huxblog_navbar" aria-label="Toggle navigation menu">
                 <span class="sr-only">Toggle navigation</span>
@@ -115,155 +113,125 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <a class="navbar-brand" href="/">FBLA visitor bureau</a>
+            <a class="navbar-brand" href="/">Blacksburg Visitor Bureau</a>
         </div>
-
-        
-        
         <div id="huxblog_navbar">
             <div class="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right" aria-label="Site menu">
+                    <li><a href="/">All Posts</a></li>
+                    
+                        
+                    
+                    
                     <li>
-                        <a href="/">All Posts</a>
+                        <a href="/about/" >About</a>
                     </li>
                     
-                        
-                    
-
-		    
-                        <li><a href="/about/" >About</a></li>
-                    
-                        <li><a href="/things-to-do/" >Things to Do</a></li>
-                    
-                        <li><a href="/dining/" >Food &amp; Dining</a></li>
-                    
-                        <li><a href="/stay/" >Where to Stay</a></li>
-                    
-                        <li><a href="/events/" >Events</a></li>
-                    
-                        <li><a href="/plan-your-visit/" >Plan Your Visit</a></li>
-                    
-		            <li>
-                        <a href="/search" aria-label="Search this site"><i class="fa fa-search" aria-hidden="true"></i></a>
-		           </li>
-                    
-		            <li>
-                        <a href="#" id="theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode" aria-pressed="false" style="opacity: 0;">
-                            <i class="fa fa-moon" aria-hidden="true"></i>
-                            <i class="fa fa-sun" aria-hidden="true" style="display: none;"></i>
-                        </a>
-		           </li>
-                    <script>
-                    (function() {
-                        
-                        var theme = localStorage.getItem('cleanwhite-theme') ||
-                                      (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-                        var toggleBtn = document.getElementById('theme-toggle');
-                        if (toggleBtn) {
-                            var moonIcon = toggleBtn.querySelector('.fa-moon');
-                            var sunIcon = toggleBtn.querySelector('.fa-sun');
-
-                            if (theme === 'dark') {
-                                if (moonIcon) moonIcon.style.display = 'none';
-                                if (sunIcon) sunIcon.style.display = 'inline';
-                                toggleBtn.setAttribute('title', 'Switch to light mode');
-                                toggleBtn.setAttribute('aria-label', 'Switch to light mode');
-                                toggleBtn.setAttribute('aria-pressed', 'true');
-                            } else {
-                                if (moonIcon) moonIcon.style.display = 'inline';
-                                if (sunIcon) sunIcon.style.display = 'none';
-                                toggleBtn.setAttribute('title', 'Switch to dark mode');
-                                toggleBtn.setAttribute('aria-label', 'Switch to dark mode');
-                                toggleBtn.setAttribute('aria-pressed', 'false');
-                            }
-
-                            
-                            requestAnimationFrame(function() {
-                                toggleBtn.style.transition = 'opacity 0.2s ease';
-                                toggleBtn.style.opacity = '1';
-                            });
-                        }
-                    })();
-                    </script>
+                    <li>
+                        <a href="/things-to-do/" >Things to Do</a>
+                    </li>
                     
                     <li>
-                        <button class="accessibility-settings-toggle" id="accessibility-settings-toggle" type="button" aria-expanded="false" aria-controls="accessibility-settings">
-                            <i class="fa fa-universal-access" aria-hidden="true"></i>
-                            <span>Accessibility</span>
+                        <a href="/dining/" >Food &amp; Dining</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/stay/" >Where to Stay</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/events/" >Events</a>
+                    </li>
+                    
+                    <li>
+                        <a href="/plan-your-visit/" >Plan Your Visit</a>
+                    </li>
+                    
+                    <li><a href="/search" aria-label="Search this site"><i class="fa fa-search" aria-hidden="true"></i></a></li>
+                    <li>
+                        <button class="site-settings-toggle" id="site-settings-toggle" type="button" aria-expanded="false" aria-controls="site-settings">
+                            <i class="fa fa-cog" aria-hidden="true"></i>
+                            <span>Settings</span>
                         </button>
                     </li>
                 </ul>
-                <section class="accessibility-settings" id="accessibility-settings" aria-labelledby="accessibility-settings-title" hidden>
-                    <h2 id="accessibility-settings-title">Display settings</h2>
-                    <fieldset>
-                        <legend>Text size</legend>
-                        <button type="button" id="text-size-decrease" aria-label="Decrease text size">−</button>
-                        <span id="text-size-value" aria-live="polite">100%</span>
-                        <button type="button" id="text-size-increase" aria-label="Increase text size">+</button>
+                <section class="site-settings" id="site-settings" aria-labelledby="site-settings-title" hidden>
+                    <h2 id="site-settings-title">Site settings</h2>
+                    <fieldset class="site-settings__group">
+                        <legend>Color theme</legend>
+                        <button type="button" id="theme-toggle" aria-label="Switch between light and dark theme" aria-pressed="false">
+                            <i class="fa fa-moon" aria-hidden="true"></i>
+                            <i class="fa fa-sun" aria-hidden="true" style="display: none;"></i>
+                            <span>Switch light / dark</span>
+                        </button>
                     </fieldset>
-                    <button type="button" id="high-contrast-toggle" aria-pressed="false">High contrast</button>
-                    <button type="button" id="underline-links-toggle" aria-pressed="false">Underline links</button>
-                    <button type="button" id="accessibility-settings-reset">Reset settings</button>
+                    <fieldset class="site-settings__group">
+                        <legend>Device layout</legend>
+                        <div class="site-settings__choices" role="group" aria-label="Choose a device layout">
+                            <button type="button" id="device-mode-phone" aria-pressed="false">
+                                <i class="fa fa-mobile" aria-hidden="true"></i>
+                                <span>Phone</span>
+                            </button>
+                            <button type="button" id="device-mode-laptop" aria-pressed="true">
+                                <i class="fa fa-laptop" aria-hidden="true"></i>
+                                <span>Laptop</span>
+                            </button>
+                        </div>
+                    </fieldset>
+                    <fieldset class="site-settings__group">
+                        <legend>Reading options</legend>
+                        <div class="site-settings__text-size">
+                            <span>Text size</span>
+                            <button type="button" id="text-size-decrease" aria-label="Decrease text size">−</button>
+                            <span id="text-size-value" aria-live="polite">100%</span>
+                            <button type="button" id="text-size-increase" aria-label="Increase text size">+</button>
+                        </div>
+                        <button type="button" id="high-contrast-toggle" aria-pressed="false">High contrast</button>
+                        <button type="button" id="underline-links-toggle" aria-pressed="false">Underline links</button>
+                    </fieldset>
+                    <button type="button" id="site-settings-reset">Reset settings</button>
                 </section>
             </div>
         </div>
-        
     </div>
-    
 </nav>
 <script>
-    
-    
-    
-    var $body   = document.body;
     var $toggle = document.querySelector('.navbar-toggle');
     var $navbar = document.querySelector('#huxblog_navbar');
     var $collapse = document.querySelector('.navbar-collapse');
 
     if ($toggle) {
-        $toggle.addEventListener('click', handleMagic);
-    }
-
-    function handleMagic(e){
-        if ($navbar.className.indexOf('in') > 0) {
-        
-            $navbar.className = " ";
-            if ($toggle) {
+        $toggle.addEventListener('click', function () {
+            var isOpen = $navbar.className.indexOf('in') > 0;
+            if (isOpen) {
+                $navbar.className = ' ';
                 $toggle.setAttribute('aria-expanded', 'false');
-            }
-            
-            setTimeout(function(){
-                
-                if($navbar.className.indexOf('in') < 0) {
-                    $collapse.style.height = "0px"
-                }
-            },400)
-        }else{
-        
-            $collapse.style.height = "auto"
-            $navbar.className += " in";
-            if ($toggle) {
+                setTimeout(function () {
+                    if ($navbar.className.indexOf('in') < 0) {
+                        $collapse.style.height = '0px';
+                    }
+                }, 400);
+            } else {
+                $collapse.style.height = 'auto';
+                $navbar.className += ' in';
                 $toggle.setAttribute('aria-expanded', 'true');
             }
-        }
+        });
     }
 
-    
-    document.addEventListener('DOMContentLoaded', function() {
-        var navLinks = document.querySelectorAll('.navbar-collapse a');
-        navLinks.forEach(function(link) {
-            link.addEventListener('click', function() {
+    document.addEventListener('DOMContentLoaded', function () {
+        document.querySelectorAll('.navbar-collapse a').forEach(function (link) {
+            link.addEventListener('click', function () {
                 if ($navbar.className.indexOf('in') > 0) {
-                    
-                    $navbar.className = " ";
+                    $navbar.className = ' ';
                     if ($toggle) {
                         $toggle.setAttribute('aria-expanded', 'false');
                     }
-                    setTimeout(function(){
-                        if($navbar.className.indexOf('in') < 0) {
-                            $collapse.style.height = "0px"
+                    setTimeout(function () {
+                        if ($navbar.className.indexOf('in') < 0) {
+                            $collapse.style.height = '0px';
                         }
-                    },400)
+                    }, 400);
                 }
             });
         });
@@ -272,14 +240,14 @@
 
 
 
-<header class="intro-header" style="background-image: url('/img/home-bg-jeep.jpg')">
+<header class="intro-header" style="background-image: url('/img/blue-ridge-hero.svg')">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1 ">
                 <div class="site-heading">
-                    <h1>FBLA visitor bureau </h1>
+                    <h1>Blacksburg Visitor Bureau </h1>
                     
-		    <span class="subheading"></span>
+		    <span class="subheading">Find your foothold in the New River Valley.</span>
                 </div>
             </div>
         </div>
@@ -337,7 +305,7 @@
            
              </ul>
 		<p class="copyright text-muted">
-                    Copyright &copy; FBLA visitor bureau 2026
+                    Copyright &copy; Blacksburg Visitor Bureau 2026
                     
                 </p>
             </div>

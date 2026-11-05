@@ -1,11 +1,14 @@
 baseURL = 'https://visitor.com/'
 languageCode = 'en-us'
-title = 'FBLA visitor bureau'
+title = 'Blacksburg Visitor Bureau'
 theme = "hugo-theme-cleanwhite"
 
 [params]
-header_image = "img/home-bg-jeep.jpg"
-custom_css = ["css/home-header.css"]
+header_image = "img/blue-ridge-hero.svg"
+slogan = "Find your foothold in the New River Valley."
+description = "Discover Virginia Tech, downtown Blacksburg, local dining, events, and the outdoor beauty of the New River Valley."
+SEOTitle = "Blacksburg, Virginia"
+custom_css = ["css/home-header.css", "css/visitor-planning.css"]
 custom_js = ["js/home-header.js", "js/accessibility-settings.js"]
 additional_menus = [
   { title = "About", href = "/about" },
